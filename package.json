@@ -1,0 +1,41 @@
+{
+  "name": "c--auto-parentheses",
+  "displayName": "C# auto parentheses",
+  "description": "The IntelliSense Enhancer for C# extension enhances your C# coding experience in Visual Studio Code by automating the insertion of parentheses during method completions. Say goodbye to manual parentheses insertion as this extension seamlessly integrates with C# IntelliSense to add parentheses automatically when selecting method completions. Boost your productivity and streamline your coding workflow with this intuitive IntelliSense enhancement tailored for C# developers.",
+  "version": "0.0.1",
+  "engines": {
+    "vscode": "^1.86.0"
+  },
+  "categories": [
+    "Other"
+  ],
+  "activationEvents": [ "onStartupFinished"],
+  "main": "./out/extension.js",
+  "contributes": {
+    "commands": [
+      {
+        "command": "c--auto-parentheses.helloWorld",
+        "title": "Hello World"
+      }
+    ]
+  },
+  "scripts": {
+    "vscode:prepublish": "npm run compile",
+    "compile": "tsc -p ./",
+    "watch": "tsc -watch -p ./",
+    "pretest": "npm run compile && npm run lint",
+    "lint": "eslint src --ext ts",
+    "test": "vscode-test"
+  },
+  "devDependencies": {
+    "@types/vscode": "^1.86.0",
+    "@types/mocha": "^10.0.6",
+    "@types/node": "18.x",
+    "@typescript-eslint/eslint-plugin": "^7.0.2",
+    "@typescript-eslint/parser": "^7.0.2",
+    "eslint": "^8.56.0",
+    "typescript": "^5.3.3",
+    "@vscode/test-cli": "^0.0.6",
+    "@vscode/test-electron": "^2.3.9"
+  }
+}
