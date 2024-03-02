@@ -1,3 +1,7 @@
+# Important #
+Do not redistribute
+Code under maintenance 
+
 # c--auto-parentheses README
 
 This is the README for your extension "c--auto-parentheses". After writing up a brief description, we recommend including the following sections.
