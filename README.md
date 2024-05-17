@@ -18,6 +18,7 @@ TBD `contributes.configuration`
 
 * Doesn't ACTUALLY search for methods, so if the word just happens to be capitalized it'll trigger
 * Might not work with other extensions
+* Triggers for CLASSES
 
 ## Todo
 
