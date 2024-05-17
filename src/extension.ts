@@ -77,12 +77,9 @@ function isIntelliSenseCompletion(changeText: string): boolean {
 
         // Check for Code Snippets
         if (matches.length > 1) {
-
             // If there are multiple matches, analyze them further if needed
             console.log('Multiple matches found:', matches);
-           
             return false
-
             // Additional logic to handle multiple matches
         }
 
