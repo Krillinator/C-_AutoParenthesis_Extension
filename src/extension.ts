@@ -17,9 +17,9 @@ export function activate(context: vscode.ExtensionContext) {
                 console.log("Change Text: "  + change.text);            // Changed Text
                 console.log("Length: "       + change.text.length);
                 console.log("----------------------");
-                
-                filterKeywords(change.text)
-                
+                 
+                // TODO - Remove
+                // filterKeywords(change.text)
 
                 if 
                 (
@@ -30,7 +30,7 @@ export function activate(context: vscode.ExtensionContext) {
                     console.log("Intellisense: ", event.document.uri.fsPath);
                         setTimeout(() => {
                             activeEditor.edit(edit => {
-                                edit.insert(activeEditor.selection.active, '()');
+                                edit.insert(activeEditor.selection.active, '();');
                             });
                     }, 5);
                 }
@@ -51,7 +51,8 @@ export function deactivate() {}
 function isIntelliSenseCompletion(changeText: string): boolean {
 
     // TODO - NEEDS WORK
-    const methodInvocationRegex = new RegExp("^[A-Za-z]{2,}$");
+    const methodInvocationRegex = new RegExp("^[A-Z][A-Za-z]{2,}$");
+
 
 
     // Match method invocations in the change text
