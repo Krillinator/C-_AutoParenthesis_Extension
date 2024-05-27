@@ -23,6 +23,7 @@ TBD `contributes.configuration`
 ## Todo
 
 * Add `toggle` for `semicolon`
+* IMPORTANT - Rework the logic from scratch
 
 ## Release Notes
 
